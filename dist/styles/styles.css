@@ -8,5 +8,91 @@
 * {
   box-sizing: border-box;
 }
+.header {
+  background-image: url("../images/nursery-slide-swansea.jpg");
+  background-size: 220%;
+  background-repeat: no-repeat;
+  margin: 0px;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.header .sub-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+}
+.header .sub-nav div {
+  font-size: 14px;
+}
+.header .sub-nav .icon-navicon {
+  font-size: 36px;
+}
+.header .nav {
+  display: none;
+  position: absolute;
+}
+.header .nav ul {
+  list-style: none;
+}
+.header .nav ul li {
+  display: inline;
+}
+.header .logo-section {
+  position: relative;
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  width: 250px;
+  height: 150px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+.header .logo-section img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: auto;
+}
+.header .title {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header .title-sub {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .title-sub img {
+  width: 80px;
+  height: 60px;
+}
+.header .title-sub p {
+  margin: 0px;
+  padding-top: 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */
