@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css","main.less"],"names":[],"mappings":"AAAA;;;;;;EAME;ACNF;EACI,uBAAA;CDQH","file":"styles.css","sourcesContent":["/*\n@1st-color: #FFB997;\n@2nd-color: #F67E7D;\n@3rd-color: #843B62;\n@4th-color: #0B032D;\n@5th-color: #74546A;\n*/\n* {\n  box-sizing: border-box;\n}\n","* {\r\n    box-sizing: border-box;\r\n    \r\n}"],"sourceRoot":"/source/"}
