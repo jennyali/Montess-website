@@ -22,6 +22,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 @media (min-width: 1150px) {
   .header {
@@ -35,14 +36,15 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 10px;
-  background-color: darkblue;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   height: 50px;
+  z-index: 1;
 }
 @media (min-width: 1150px) {
   .header .sub-nav {
     height: 40px;
+    display: none;
   }
 }
 .header .sub-nav div {
@@ -73,6 +75,7 @@
   display: none;
   position: absolute;
   color: white;
+  z-index: 1;
 }
 @media (min-width: 1150px) {
   .header .nav {
@@ -83,10 +86,22 @@
 }
 .header .nav ul {
   list-style: none;
+  margin: 20px;
 }
 .header .nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-left: 20px;
+}
+.header .nav-gradient {
+  position: absolute;
+  height: 150px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: darkblue;
+  background: linear-gradient(#1d3557, rgba(255, 0, 0, 0));
+  opacity: 0.6;
+  z-index: 0;
 }
 .header .logo-section {
   position: relative;
@@ -104,12 +119,19 @@
   padding-top: 10px;
   margin-top: 20px;
 }
+.header .logo-section p {
+  margin-top: 0px;
+}
+.header .logo-section p span {
+  font-weight: bold;
+}
 @media (min-width: 1150px) {
   .header .logo-section {
     margin: 20px;
     left: 20px;
     width: 300px;
     height: 200px;
+    font-size: 20px;
   }
 }
 .header .logo-section img {
@@ -136,11 +158,31 @@
     text-align: left;
     position: relative;
     left: 40px;
-    font-size: 36px;
+    font-size: 40px;
+    line-height: 0.9;
   }
 }
 .header .title span {
   font-weight: normal;
+  font-size: 30px;
+}
+.header .moved-contact {
+  color: white;
+  position: relative;
+  display: none;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  left: 40px;
+}
+.header .moved-contact p {
+  margin-right: 20px;
+  font-style: italic;
+}
+@media (min-width: 1150px) {
+  .header .moved-contact {
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .header .title-sub {
   background-color: darkblue;
@@ -174,6 +216,25 @@
   .header .title-sub p {
     padding: 10px;
   }
+}
+.header .ofstedtwo {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  right: 150px;
+  width: 120px;
+  height: 95px;
+  background-color: darkblue;
+  overflow: hidden;
+}
+@media (min-width: 1150px) {
+  .header .ofstedtwo {
+    display: inline-block;
+  }
+}
+.header .ofstedtwo img {
+  width: 120px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
