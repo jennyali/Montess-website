@@ -1,6 +1,6 @@
 .header{
     background-image: url("../images/nursery-slide-swansea.jpg");
-    background-size: 220%;
+    background-size: 240%;
     background-repeat: no-repeat;
     margin: 0px;
     display: flex;
@@ -9,6 +9,12 @@
     left: 0px;
     right: 0px;
     flex-direction: column;
+    height: 100%;
+
+    @media (min-width: 1150px){
+        height: 500px;
+        background-size: 100%;
+    }
 
     .sub-nav{
         display: flex;
@@ -19,28 +25,53 @@
         font-family: Arial, Helvetica, sans-serif;
         height: 50px;
 
+        @media (min-width: 1150px){
+            height: 40px;
+        }
+
         div{
             font-size: 14px;
+            display: inline-block;
+            justify-content: column;
+
+            p{
+                margin: 0px;
+                margin-right: 20px;
+
+            }
+
+            @media (min-width: 480px){
+                display: flex;
+            }
 
         }
 
         .icon-navicon{
             font-size: 36px;
 
+            @media (min-width: 1150px){
+                display: none;
+            }
+
         }
     }
 
     .nav{
         display: none;
-
-
         position: absolute;
+        color: white;
+
+        @media (min-width: 1150px){
+            display: flex;
+            right: 0px;
+        }
 
         ul{
             list-style: none;
 
             li{
                 display: inline;
+                margin-right: 20px;
             }
         }
     }
@@ -52,18 +83,33 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
         background-color: white;
         width: 250px;
         height: 150px;
         padding-top: 10px;
         margin-top: 20px;
 
+        @media (min-width: 1150px){
+            margin: 20px;
+            left: 20px;
+            width: 300px;
+            height: 200px;
+            }
+
+
+
         img{
             width: 80px;
             height: 80px;
             position: relative;
-            margin: auto;      
+            margin: auto;
+
+            @media (min-width: 1150px){
+                width: 120px;
+                height: 120px;
+
+
+            }     
         }
 
     }
@@ -74,6 +120,18 @@
         font-size: 26px;
         text-align: center;
         margin-bottom: 10px;
+
+
+        @media (min-width: 1150px){
+            text-align: left;
+            position: relative;
+            left: 40px;
+            font-size: 36px;
+        }
+
+        span{
+            font-weight: normal;
+        }
     }
 
     .title-sub{
@@ -83,15 +141,32 @@
         margin: 0px;
         display: flex;
 
+         @media (min-width: 1150px){
+             position: relative;
+             left: 30px;
+            background: none;
+            
+        }
+
         img{
             width: 80px;
             height: 60px;
+
+            @media (min-width: 1150px){
+                display: none;
+            }
         }
 
         p{
             margin: 0px;
             padding-top: 10px;
+
+            @media (min-width: 1150px){
+                padding: 10px;
+
+            }
         }
+
     }
 
 

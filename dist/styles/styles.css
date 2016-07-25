@@ -10,7 +10,7 @@
 }
 .header {
   background-image: url("../images/nursery-slide-swansea.jpg");
-  background-size: 220%;
+  background-size: 240%;
   background-repeat: no-repeat;
   margin: 0px;
   display: -ms-flexbox;
@@ -21,6 +21,13 @@
   right: 0px;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100%;
+}
+@media (min-width: 1150px) {
+  .header {
+    height: 500px;
+    background-size: 100%;
+  }
 }
 .header .sub-nav {
   display: -ms-flexbox;
@@ -33,21 +40,53 @@
   font-family: Arial, Helvetica, sans-serif;
   height: 50px;
 }
+@media (min-width: 1150px) {
+  .header .sub-nav {
+    height: 40px;
+  }
+}
 .header .sub-nav div {
   font-size: 14px;
+  display: inline-block;
+  -ms-flex-pack: column;
+  justify-content: column;
+}
+.header .sub-nav div p {
+  margin: 0px;
+  margin-right: 20px;
+}
+@media (min-width: 480px) {
+  .header .sub-nav div {
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .header .sub-nav .icon-navicon {
   font-size: 36px;
 }
+@media (min-width: 1150px) {
+  .header .sub-nav .icon-navicon {
+    display: none;
+  }
+}
 .header .nav {
   display: none;
   position: absolute;
+  color: white;
+}
+@media (min-width: 1150px) {
+  .header .nav {
+    display: -ms-flexbox;
+    display: flex;
+    right: 0px;
+  }
 }
 .header .nav ul {
   list-style: none;
 }
 .header .nav ul li {
   display: inline;
+  margin-right: 20px;
 }
 .header .logo-section {
   position: relative;
@@ -65,11 +104,25 @@
   padding-top: 10px;
   margin-top: 20px;
 }
+@media (min-width: 1150px) {
+  .header .logo-section {
+    margin: 20px;
+    left: 20px;
+    width: 300px;
+    height: 200px;
+  }
+}
 .header .logo-section img {
   width: 80px;
   height: 80px;
   position: relative;
   margin: auto;
+}
+@media (min-width: 1150px) {
+  .header .logo-section img {
+    width: 120px;
+    height: 120px;
+  }
 }
 .header .title {
   color: white;
@@ -77,6 +130,17 @@
   font-size: 26px;
   text-align: center;
   margin-bottom: 10px;
+}
+@media (min-width: 1150px) {
+  .header .title {
+    text-align: left;
+    position: relative;
+    left: 40px;
+    font-size: 36px;
+  }
+}
+.header .title span {
+  font-weight: normal;
 }
 .header .title-sub {
   background-color: darkblue;
@@ -86,13 +150,30 @@
   display: -ms-flexbox;
   display: flex;
 }
+@media (min-width: 1150px) {
+  .header .title-sub {
+    position: relative;
+    left: 30px;
+    background: none;
+  }
+}
 .header .title-sub img {
   width: 80px;
   height: 60px;
 }
+@media (min-width: 1150px) {
+  .header .title-sub img {
+    display: none;
+  }
+}
 .header .title-sub p {
   margin: 0px;
   padding-top: 10px;
+}
+@media (min-width: 1150px) {
+  .header .title-sub p {
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
