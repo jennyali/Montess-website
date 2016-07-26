@@ -1,69 +1,158 @@
 .header{
     background-image: url("../images/nursery-slide-swansea.jpg");
-    background-size: 220%;
+    background-size: 1300px 100%;
     background-repeat: no-repeat;
+    background-position: center;
     margin: 0px;
     display: flex;
     position: relative;
+    flex-direction: column;
     top: 0px;
     left: 0px;
     right: 0px;
-    flex-direction: column;
+    height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    @media (min-width: 1150px){
+        height: 500px;
+        background-size: 1500px 100%;
+    }
 
     .sub-nav{
         display: flex;
         justify-content: space-between;
         padding: 10px;
-        background-color: darkblue;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         height: 50px;
+        z-index: 1;
+
+        @media (min-width: 1150px){
+            height: 40px;
+            display: none;
+        }
 
         div{
             font-size: 14px;
+            display: inline-block;
+            justify-content: column;
+
+            p{
+                margin: 0px;
+                margin-right: 20px;
+
+            }
+
+            @media (min-width: 480px){
+                display: flex;
+            }
 
         }
 
         .icon-navicon{
             font-size: 36px;
 
+            @media (min-width: 1150px){
+                display: none;
+            }
+
         }
     }
 
     .nav{
         display: none;
-
-
         position: absolute;
+        color: @2nd-color;
+        z-index: 1;
+
+        @media (min-width: 1150px){
+            display: flex;
+            right: 0px;
+        }
 
         ul{
             list-style: none;
+            margin: 20px;
+            
 
             li{
                 display: inline;
+                margin-left: 20px;
             }
         }
     }
 
+     .nav-gradient{
+        position: absolute;
+        height: 150px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: darkblue;
+        background: linear-gradient(rgba(70,63,58,1), rgba(255,0,0,0));
+        opacity: 0.8;
+        z-index: 0;
+    }   
+
+        .nav-gradient2nd{
+        position: absolute;
+        height: 150px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: darkblue;
+        background: linear-gradient( rgba(255,0,0,0), rgba(70,63,58,1));
+        opacity: 0.8;
+        z-index: 0;
+    }   
+
     .logo-section{
         position: relative;
-        margin: auto;
         display: flex;
+        align-self: center;
         flex-direction: column;
-        justify-content: center;
         text-align: center;
-
         background-color: white;
         width: 250px;
         height: 150px;
         padding-top: 10px;
         margin-top: 20px;
+        p{
+            margin-top: 0px;
+
+            span{
+                font-weight: bold;
+            }
+        }
+        
+        @media (min-width: 780px){
+            align-self: flex-start;
+            margin: 20px;
+            left: 20px;
+            //box-shadow: 3px 4px 0px 0px rgba(0,0,0,0.38);
+
+        }
+
+        @media (min-width: 1150px){
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+            //box-shadow: 9px 12px 0px 0px rgba(0,0,0,0.38);
+            }  
 
         img{
             width: 80px;
             height: 80px;
             position: relative;
-            margin: auto;      
+            margin: auto;
+
+            @media (min-width: 1150px){
+                width: 120px;
+                height: 120px;
+
+            } 
+
         }
 
     }
@@ -74,26 +163,127 @@
         font-size: 26px;
         text-align: center;
         margin-bottom: 10px;
+        z-index: 1;
+
+        @media (min-width: 780px){
+        position: relative;
+        text-align: left;
+        left: 40px;
+        font-size: 32px;
+        line-height: 0.9;
+        }
+
+        @media (min-width: 1150px){
+            font-size: 40px;
+        }
+
+        span{
+            font-weight: normal;
+            font-size: 20px;
+
+             @media (min-width: 1150px){
+                font-size: 30px;
+             }
+
+        }
     }
 
+ .moved-contact{
+     color: white;
+     position: relative;
+     display: none;
+     flex-direction: row;
+     left: 40px;
+
+     p{
+         margin-right: 20px;
+         font-style: italic;
+     }
+
+     @media (min-width: 1150px){
+         display: flex;
+     }
+ }
+
     .title-sub{
-        background-color: darkblue;
+        background-color: @5th-color;
         color: white;
         text-align: center;
         margin: 0px;
         display: flex;
+        position: relative;
+        bottom: -30px;
+        z-index: 1;
+
+
+
+         @media (min-width: 780px){
+            position: relative;
+            left: 30px;
+            background: none;
+            text-align: left;
+
+            
+        }
 
         img{
             width: 80px;
             height: 60px;
+
+            @media (min-width: 780px){
+                display: none;
+            }
         }
 
         p{
             margin: 0px;
-            padding-top: 10px;
+            padding: 10px;
+            width: 400px;
+            flex-grow: 2;
+            align-self: center;
+
+
+            @media (min-width: 780px){
+                padding: 10px;
+                width: 100%;
+
+            }
         }
+
     }
 
+    .ofstedtwo{
+        display: none;
+        position: absolute;
+        bottom: 0px;
+        right: 150px;
+        width: 120px;
+        height: 90px;
+        background-color: darkblue;
+        overflow: hidden;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        z-index: 1;
+
+
+        @media (min-width: 780px){
+            display: inline-block;
+            right: 20px;
+        }
+
+        @media (min-width: 1150px){
+            right: 120px;
+
+        }
+
+        img{
+            width: 120px;
+            height: 100px;
+            border-top-left-radius: 20px;
+
+        }
+
+    }
 
 }
 
