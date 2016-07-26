@@ -8,26 +8,30 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #8A817C;
+}
 .header {
   background-image: url("../images/nursery-slide-swansea.jpg");
-  background-size: 240%;
+  background-size: 1300px 100%;
   background-repeat: no-repeat;
+  background-position: center;
   margin: 0px;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -ms-flex-direction: column;
+  flex-direction: column;
   top: 0px;
   left: 0px;
   right: 0px;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 100%;
+  height: 400px;
   font-family: Arial, Helvetica, sans-serif;
 }
 @media (min-width: 1150px) {
   .header {
     height: 500px;
-    background-size: 100%;
+    background-size: 1500px 100%;
   }
 }
 .header .sub-nav {
@@ -74,7 +78,7 @@
 .header .nav {
   display: none;
   position: absolute;
-  color: white;
+  color: #F4F3EE;
   z-index: 1;
 }
 @media (min-width: 1150px) {
@@ -99,19 +103,29 @@
   left: 0px;
   right: 0px;
   background-color: darkblue;
-  background: linear-gradient(#1d3557, rgba(255, 0, 0, 0));
-  opacity: 0.6;
+  background: linear-gradient(#463f3a, rgba(255, 0, 0, 0));
+  opacity: 0.8;
+  z-index: 0;
+}
+.header .nav-gradient2nd {
+  position: absolute;
+  height: 150px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: darkblue;
+  background: linear-gradient(rgba(255, 0, 0, 0), #463f3a);
+  opacity: 0.8;
   z-index: 0;
 }
 .header .logo-section {
   position: relative;
-  margin: auto;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center;
   text-align: center;
   background-color: white;
   width: 250px;
@@ -125,10 +139,16 @@
 .header .logo-section p span {
   font-weight: bold;
 }
-@media (min-width: 1150px) {
+@media (min-width: 780px) {
   .header .logo-section {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     margin: 20px;
     left: 20px;
+  }
+}
+@media (min-width: 1150px) {
+  .header .logo-section {
     width: 300px;
     height: 200px;
     font-size: 20px;
@@ -152,19 +172,30 @@
   font-size: 26px;
   text-align: center;
   margin-bottom: 10px;
+  z-index: 1;
+}
+@media (min-width: 780px) {
+  .header .title {
+    position: relative;
+    text-align: left;
+    left: 40px;
+    font-size: 32px;
+    line-height: 0.9;
+  }
 }
 @media (min-width: 1150px) {
   .header .title {
-    text-align: left;
-    position: relative;
-    left: 40px;
     font-size: 40px;
-    line-height: 0.9;
   }
 }
 .header .title span {
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
+}
+@media (min-width: 1150px) {
+  .header .title span {
+    font-size: 30px;
+  }
 }
 .header .moved-contact {
   color: white;
@@ -185,36 +216,46 @@
   }
 }
 .header .title-sub {
-  background-color: darkblue;
+  background-color: #463F3A;
   color: white;
   text-align: center;
   margin: 0px;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  bottom: -30px;
+  z-index: 1;
 }
-@media (min-width: 1150px) {
+@media (min-width: 780px) {
   .header .title-sub {
     position: relative;
     left: 30px;
     background: none;
+    text-align: left;
   }
 }
 .header .title-sub img {
   width: 80px;
   height: 60px;
 }
-@media (min-width: 1150px) {
+@media (min-width: 780px) {
   .header .title-sub img {
     display: none;
   }
 }
 .header .title-sub p {
   margin: 0px;
-  padding-top: 10px;
+  padding: 10px;
+  width: 400px;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
-@media (min-width: 1150px) {
+@media (min-width: 780px) {
   .header .title-sub p {
     padding: 10px;
+    width: 100%;
   }
 }
 .header .ofstedtwo {
@@ -223,18 +264,28 @@
   bottom: 0px;
   right: 150px;
   width: 120px;
-  height: 95px;
+  height: 90px;
   background-color: darkblue;
   overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  z-index: 1;
+}
+@media (min-width: 780px) {
+  .header .ofstedtwo {
+    display: inline-block;
+    right: 20px;
+  }
 }
 @media (min-width: 1150px) {
   .header .ofstedtwo {
-    display: inline-block;
+    right: 120px;
   }
 }
 .header .ofstedtwo img {
   width: 120px;
   height: 100px;
+  border-top-left-radius: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
