@@ -9,13 +9,40 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #8A817C;
+  background-color: #BCB8B1;
 }
-.header {
-  background-image: url("../images/nursery-slide-swansea.jpg");
+.header-image {
   background-size: 1300px 100%;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 8px;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 400px;
+  z-index: -1;
+}
+@media (min-width: 1150px) {
+  .header-image {
+    height: 500px;
+    background-size: 1500px 100%;
+  }
+}
+.header-image img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.header-image img.active {
+  z-index: 3;
+}
+.header {
   margin: 0px;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +97,9 @@ body {
 .header .sub-nav .icon-navicon {
   font-size: 36px;
 }
+.header .sub-nav .icon-navicon:active {
+  color: #E0aFa0;
+}
 @media (min-width: 1150px) {
   .header .sub-nav .icon-navicon {
     display: none;
@@ -91,10 +121,20 @@ body {
 .header .nav ul {
   list-style: none;
   margin: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 780px;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .header .nav ul li {
-  display: inline;
   margin-left: 20px;
+}
+.header .nav ul li:hover {
+  color: #E0aFa0;
+}
+.header .nav ul li:active {
+  font-size: 20px;
 }
 .header .nav-gradient {
   position: absolute;
@@ -117,6 +157,35 @@ body {
   background: linear-gradient(rgba(255, 0, 0, 0), #463f3a);
   opacity: 0.8;
   z-index: 0;
+}
+.header .side-nav {
+  background-color: #8A817C;
+  color: #463F3A;
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 2;
+  padding: 5px;
+}
+@media (min-width: 780px) {
+  .header .side-nav {
+    display: none;
+  }
+}
+.header .side-nav ul {
+  list-style: none;
+  padding: 0px;
+}
+.header .side-nav ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.header .side-nav ul li:hover {
+  color: #F4F3EE;
+}
+.header .side-nav ul li:active {
+  border-bottom: 2px solid #E0aFa0;
 }
 .header .logo-section {
   position: relative;
