@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #BCB8B1;
+  background-color: #8A817C;
   margin: 0px;
 }
 .header-image {
@@ -285,7 +285,6 @@ body {
   font-style: italic;
 }
 .title-sub {
-  background-color: #463F3A;
   color: white;
   text-align: center;
   margin: 0px;
@@ -355,6 +354,63 @@ body {
   width: 120px;
   height: 100px;
   border-top-left-radius: 20px;
+}
+.welcome-block {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #F4F3EE;
+}
+.welcome-block img {
+  position: absolute;
+  right: 0px;
+  width: 200px;
+  height: 250px;
+  margin: 40px 20px 0px 20px;
+  z-index: 1;
+  opacity: 0.3;
+}
+@media (min-width: 490px) {
+  .welcome-block img {
+    position: relative;
+    right: 0px;
+    opacity: 1;
+  }
+}
+.welcome-text {
+  position: relative;
+  margin: 20px 20px 40px 20px;
+  z-index: 2;
+  left: 0px;
+  width: 700px;
+}
+.welcome-text h3 {
+  font-size: 24px;
+}
+@media (min-width: 780px) {
+  .welcome-text h3 {
+    font-size: 36px;
+  }
+}
+.welcome-text .welcome-text-secondary {
+  display: none;
+}
+@media (min-width: 780px) {
+  .welcome-text .welcome-text-secondary {
+    display: block;
+  }
+}
+.text-button {
+  display: block;
+}
+@media (min-width: 780px) {
+  .text-button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
