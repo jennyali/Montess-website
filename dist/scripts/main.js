@@ -3,12 +3,11 @@ $("document").ready(function() {
 var sideNav = $(".side-nav");
 var navIcon = $(".icon-navicon");
 var header = $(".header");
+var textButton = $(".text-button");
+var secondText = $(".welcome-text-secondary");
 
 
 sideNav.hide();
-navIcon.on('click', function(){
-    sideNav.toggle(200);
-});
 
 $('.header-image').hide();
 
@@ -22,8 +21,16 @@ function cycleImages(){
         });
 }
 
+textButton.on('click', function(){
+    secondText.toggle();
+});
+
+navIcon.on('click', function(){
+    sideNav.toggle(200);
+});
+
 $(window).load(function(){
-    $('.header-image').fadeIn(2000);
+    $('.header-image').fadeIn(1000);
     setInterval(cycleImages,7000);
 })
 
