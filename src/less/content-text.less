@@ -1,0 +1,60 @@
+.welcome-block{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: @2nd-color;
+
+    img{
+        position: absolute;
+        right: 0px;
+        width: 200px;
+        height: 250px;
+        margin: 40px 20px 0px 20px;
+        z-index: 1;
+        opacity: 0.3;
+
+        @media (min-width: 490px){
+         position: relative;
+         right: 0px;
+         opacity: 1;
+
+        }
+
+
+    }
+}
+
+.welcome-text{
+    position: relative;
+    margin: 20px 20px 40px 20px;
+    z-index: 2;
+    left: 0px;
+    width: 700px;
+
+    h3{
+        font-size: 24px;
+
+            @media (min-width: 780px){
+                font-size: 36px;}
+    }
+
+    .welcome-text-secondary{
+        display: none;
+
+            @media (min-width: 780px){
+                display: block;
+
+            }
+    }
+}
+
+
+.text-button{
+    display: block;
+
+         @media (min-width: 780px){
+            display: none;
+
+        }
+}
