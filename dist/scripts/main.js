@@ -7,7 +7,6 @@ var textButton = $(".text-button");
 var secondText = $(".welcome-text-secondary");
 
 
-sideNav.hide();
 
 $('.header-image').hide();
 
@@ -22,11 +21,12 @@ function cycleImages(){
 }
 
 textButton.on('click', function(){
-    secondText.toggle();
+    secondText.toggleClass('appear');
+    $(this).toggleClass('button-move');
 });
 
 navIcon.on('click', function(){
-    sideNav.toggle(200);
+    sideNav.toggleClass('move');
 });
 
 $(window).load(function(){

@@ -43,17 +43,22 @@
             @media (min-width: 780px){
                 font-size: 36px;}
     }
-
-    .welcome-text-secondary{
-        display: none;
-
-            @media (min-width: 900px){
-                display: block;
-
-            }
-    }
 }
 
+.welcome-text-secondary{
+        opacity: 0;
+        transition: opacity 0.25s;
+
+            @media (min-width: 900px){
+                opacity: 1;
+
+            }
+}
+
+
+.appear{
+    opacity: 1;
+}
 
 .text-button{
     display: block;
@@ -66,14 +71,21 @@
     margin-top: 20px;
     outline: none;
 
+    position: absolute;
+    bottom: 35%;
+
+         @media (min-width: 580px){
+            bottom: 30%;
+         }
+
          @media (min-width: 900px){
             display: none;
 
         }
 
     &:hover{
-        border: 2px solid @1st-color;
         color: @2nd-color;
+        background: @5th-color;
     }
     
 
@@ -81,4 +93,9 @@
         background: @1st-color;
         color: @2nd-color;
     }
+}
+
+.button-move{
+    position: relative;
+    bottom: 0px;
 }
