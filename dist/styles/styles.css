@@ -133,9 +133,8 @@ body {
 }
 .sub-nav div {
   font-size: 14px;
-  display: inline-block;
-  -ms-flex-pack: column;
-  justify-content: column;
+  -ms-flex-item-align: left;
+  align-self: left;
 }
 @media (min-width: 480px) {
   .sub-nav div {
@@ -144,8 +143,10 @@ body {
   }
 }
 .sub-nav div p {
+  -ms-flex-item-align: right;
+  align-self: right;
   margin: 0px;
-  margin-right: 20px;
+  margin-left: 30px;
 }
 .sub-nav .icon-navicon {
   font-size: 36px;
@@ -159,16 +160,16 @@ body {
   color: #E0aFa0;
 }
 .side-nav {
-  background-color: #8A817C;
+  background-color: #F4F3EE;
   color: #463F3A;
   width: 200px;
   position: absolute;
   top: 50px;
-  right: 0px;
+  left: -200px;
   z-index: 2;
-  padding: 5px;
+  transition: left 0.25s;
 }
-@media (min-width: 780px) {
+@media (min-width: 1150px) {
   .side-nav {
     display: none;
   }
@@ -176,16 +177,21 @@ body {
 .side-nav ul {
   list-style: none;
   padding: 0px;
+  margin: 0px;
 }
 .side-nav ul li {
-  margin-bottom: 10px;
-  padding-left: 20px;
+  padding: 15px 0px 10px 20px;
+  border-bottom: 1px solid #E0aFa0;
 }
 .side-nav ul li:hover {
+  background-color: #BCB8B1;
   color: #F4F3EE;
 }
 .side-nav ul li:active {
-  border-bottom: 2px solid #E0aFa0;
+  background-color: #8A817C;
+}
+.move {
+  left: 0px;
 }
 .logo-section {
   position: relative;
@@ -415,13 +421,17 @@ body {
     font-size: 36px;
   }
 }
-.welcome-text .welcome-text-secondary {
-  display: none;
+.welcome-text-secondary {
+  opacity: 0;
+  transition: opacity 0.25s;
 }
 @media (min-width: 900px) {
-  .welcome-text .welcome-text-secondary {
-    display: block;
+  .welcome-text-secondary {
+    opacity: 1;
   }
+}
+.appear {
+  opacity: 1;
 }
 .text-button {
   display: block;
@@ -433,6 +443,13 @@ body {
   color: #E0aFa0;
   margin-top: 20px;
   outline: none;
+  position: absolute;
+  bottom: 35%;
+}
+@media (min-width: 580px) {
+  .text-button {
+    bottom: 30%;
+  }
 }
 @media (min-width: 900px) {
   .text-button {
@@ -440,12 +457,16 @@ body {
   }
 }
 .text-button:hover {
-  border: 2px solid #E0aFa0;
   color: #F4F3EE;
+  background: #463F3A;
 }
 .text-button:active {
   background: #E0aFa0;
   color: #F4F3EE;
+}
+.button-move {
+  position: relative;
+  bottom: 0px;
 }
 footer {
   display: -ms-flexbox;

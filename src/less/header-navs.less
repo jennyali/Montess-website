@@ -36,14 +36,16 @@
 
         div{
             font-size: 14px;
-            display: inline-block;
-            justify-content: column;
+            align-self: left;
+
 
                 @media (min-width: 480px){display: flex;}
                     
                     p{
+                        align-self: right;
                         margin: 0px;
-                        margin-right: 20px;
+                        margin-left: 30px;
+                        
                     }
             }
 
@@ -58,33 +60,38 @@
 
 
 .side-nav{
-        background-color: @4th-color;
+        background-color: @2nd-color;
         color: @5th-color;
         width: 200px;
         position: absolute;
         top: 50px;
-        right: 0px;
+        left: -200px;
         z-index: 2;
-        padding: 5px;
+        transition: left 0.25s;
 
-        @media (min-width: 780px){display: none;}
+        @media (min-width: 1150px){display: none;}
     
             ul{
                 list-style: none;
                 padding: 0px;
+                margin: 0px;
 
                     li{
-                        margin-bottom: 10px;
-                        padding-left: 20px;
+                        
+                        padding: 15px 0px 10px 20px;
+                        border-bottom: 1px solid @1st-color;
 
-                        &:hover{color: @2nd-color;}
+                        &:hover{background-color: @3rd-color;
+                        color:@2nd-color;}
 
-                        &:active{border-bottom: 2px solid @1st-color;}
+                        &:active{background-color: @4th-color}
                     }
             }
 }
 
-
+.move{
+    left: 0px;
+}
 
 
 
