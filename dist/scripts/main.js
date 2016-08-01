@@ -22,7 +22,6 @@ function cycleImages(){
 
 textButton.on('click', function(){
     secondText.toggleClass('appear');
-    $(this).toggleClass('button-move');
     $('.content-nav').toggleClass('move-down');
 });
 
