@@ -5,6 +5,7 @@ var navIcon = $(".icon-navicon");
 var header = $(".header");
 var textButton = $(".text-button");
 var secondText = $(".welcome-text-secondary");
+var navImageWrit = $('.nav-image-writing');
 
 
 
@@ -19,6 +20,12 @@ function cycleImages(){
             $next.css('z-index',3).addClass('active');
         });
 }
+
+navImageWrit.on('click',function(){
+    $(this).toggleClass('move-up');
+    $('.icon-scale-spread-1').toggleClass('color-two');
+    $('.icon-scale-reduce-3').toggleClass('color');
+});
 
 textButton.on('click', function(){
     secondText.toggleClass('appear');

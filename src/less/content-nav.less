@@ -5,11 +5,11 @@
     justify-content: center;
     flex-direction: row;
     overflow: hidden;
-    padding-top: 20px;
+    
     background: linear-gradient(rgba(43,31,35,0.3), rgba(255,0,0,0));
     
 
-        @media (min-width: 480px){top: 0px; margin: 20px 0px 20px 0px;}
+        @media (min-width: 480px){top: 0px; margin: 20px 0px 20px 0px;padding-top: 20px;}
 
         @media (min-width: 2000px){justify-content: space-between;}
 
@@ -52,9 +52,10 @@
         overflow: hidden;
         transition: bottom 0.5s;
         font-size: 16px;
+        cursor: pointer;
 
             &:hover{bottom: 0px;}
-                
+
                 @media (min-width: 723px){bottom: -150px; &:hover{bottom: 0px;}}
 
                 @media (min-width: 1300px){bottom: -200px; &:hover{bottom: 0px;}}
@@ -91,7 +92,37 @@
     }
 }
 
+.icon-scale-spread-1{
+    position: absolute;
+    margin: 10px;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+}
+
+.icon-scale-reduce-3{
+    display: none;
+    position: absolute;
+    margin: 10px;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+}
+
+.color{
+    color: @1st-color;
+    display: inline-block;
+}
+
+.color-two{
+    color: @1st-color;
+    display: none;
+}
+
+
 .move-down{top: 0px;}
+
+.move-up{bottom: 0px;}
 
 .nav-image-button{
     width: 120px;
