@@ -3,9 +3,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: @5th-color;
-    background-color: @2nd-color;
-    padding-bottom: 40px;
+    color: @3rd-color;
+    background-color: @4th-color;
+    font-family: 'Source Sans Pro', sans-serif;
+    
 
     img{
         position: absolute;
@@ -14,12 +15,12 @@
         height: 250px;
         margin: 40px 20px 0px 20px;
         z-index: 1;
-        opacity: 0.1;
+        opacity: 0.3;
 
         @media (min-width: 780px){
          position: relative;
          right: 0px;
-         opacity: 1;
+         opacity: 0.8;
 
         }
 
@@ -34,10 +35,12 @@
     left: 0px;
     width: 700px;
     line-height: 26px;
+    word-spacing: 3px;
 
     h3{
+        font-family: 'Lora', serif;
         font-size: 24px;
-        color: @4th-color;
+        color: @2nd-color;
             @media (min-width: 480px){
                 font-size: 30px;
                 
@@ -81,6 +84,7 @@
     outline: none;
     position: absolute;
     bottom: 35%;
+    font-family: 'Source Sans Pro', sans-serif;
 
          @media (min-width: 580px){
             bottom: 30%;

@@ -1,5 +1,4 @@
 .content-nav{
-    background-color: @3rd-color;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -7,8 +6,10 @@
     flex-direction: row;
     overflow: hidden;
     
+    background: linear-gradient(rgba(43,31,35,0.3), rgba(255,0,0,0));
+    
 
-        @media (min-width: 480px){top: 0px; margin: 20px 0px 20px 0px;}
+        @media (min-width: 480px){top: 0px; margin: 20px 0px 20px 0px;padding-top: 20px;}
 
         @media (min-width: 2000px){justify-content: space-between;}
 
@@ -45,15 +46,16 @@
         justify-content: flex-start;
         bottom: -200px;
         width: 100%;
-        background-color: rgba(45,49,66,0.7);
+        background-color: rgba(102,67,59,0.9);
         color: @2nd-color;
         height: 100%;
         overflow: hidden;
         transition: bottom 0.5s;
         font-size: 16px;
+        cursor: pointer;
 
             &:hover{bottom: 0px;}
-                
+
                 @media (min-width: 723px){bottom: -150px; &:hover{bottom: 0px;}}
 
                 @media (min-width: 1300px){bottom: -200px; &:hover{bottom: 0px;}}
@@ -62,6 +64,7 @@
                         margin: 0px;
                         padding-top: 15px;
                         font-size: 18px;
+                        font-family: 'Lora', serif;
                     }
 
                     p{
@@ -70,10 +73,12 @@
                         width: 100%;
                         font-weight: normal;
                         line-height: 26px;
+                        color: @3rd-color;
+                        font-family: 'Source Sans Pro', sans-serif;
 
                                 @media (min-width: 723px){font-size:14px;}
 
-                                @media (min-width: 1300px){font-size:12px;}
+                                @media (min-width: 1300px){font-size:14px;}
 
                     }
     
@@ -87,7 +92,39 @@
     }
 }
 
+.icon-scale-spread-1{
+    position: absolute;
+    margin: 10px;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: @3rd-color;
+}
+
+.icon-scale-reduce-3{
+    display: none;
+    position: absolute;
+    margin: 10px;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: @3rd-color;
+}
+
+.color{
+    color: @1st-color;
+    display: inline-block;
+}
+
+.color-two{
+    color: @1st-color;
+    display: none;
+}
+
+
 .move-down{top: 0px;}
+
+.move-up{bottom: 0px;}
 
 .nav-image-button{
     width: 120px;
@@ -101,6 +138,7 @@
     background-color: rgba(45,49,66,0);
     outline:none;
     cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
 
         &:hover{background: @1st-color; color: @2nd-color;}
 }

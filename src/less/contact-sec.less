@@ -1,52 +1,102 @@
 .contact{
     display: flex;
     justify-content: center;
-    background-color: @3rd-color;
+    background-color: @4th-color;
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
 
-        @media (min-width: 480px){margin-bottom: 40px;}
+        
 
 }
 
 .contact-block{
-        padding: 20px 10px;
+        padding: 0px 0px;
         display: flex;
         width: 100%;
         height: 230px;
         background-color: @4th-color;
         justify-content: space-between;
 
-        @media (min-width: 480px){width: 75%; height: 300px; padding: 20px;}
+
+
+
+        @media (min-width: 480px){
+            width: 75%; 
+            height: 300px; 
+            padding: 20px; 
+            border: 1px solid @3rd-color;
+            padding: 20px 20px;
+}
 
         @media (min-width: 1000px){width: 60%;}
 }
 
 .contact-block-text{
-        width: 50%;
         padding-right: 10px;
         line-height: 20px;
+        background-color: rgba(102,67,59,0.9);
+        position: absolute;
+        text-align: center;
+        padding-bottom: 10px;
+        width: 100%;
+        bottom: 0px;
+
+            @media (min-width: 480px){
+                position: relative;
+                text-align: left;
+                padding-bottom: 0px;
+                width: 50%;
+                top: 0px;
+            }
 
         h3{
             color: @2nd-color;
-            margin-top: 0px;
+            margin: 20px 20px 20px 0px;
+            font-family: 'Lora', serif;
+
+
         }
 
         p{
             color: @3rd-color;
+            display: none;
+            font-family: 'Source Sans Pro', sans-serif;
 
-                span{display: none; @media (min-width: 600px){display: inline;}}
+                @media (min-width: 480px){
+                    display: block;
+                }
+
+                span{
+                    display: none; 
+
+                        @media (min-width: 800px){
+                            display: inline;}
+
+                        @media (min-width: 900px){
+                            line-height: 26px;
+
+                
+            }
         }
+    }
 }
 
 .contact-block-map{
-        width: 50%;
+        width: 150%;
         height: 75%;
         background-color: @2nd-color;
         background-image: url('../images/screen_shot_map.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        height: 100%;
+        background-position: right;
+       
+
+                @media (min-width: 480px){
+                    width: 50%;
+                }
 
                 @media (min-width: 680px){
                     width: 300px;
