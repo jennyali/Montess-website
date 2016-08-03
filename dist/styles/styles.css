@@ -132,7 +132,7 @@ body {
   color: #EA6A09;
 }
 .nav ul li:active {
-  font-size: 20px;
+  text-decoration: underline;
 }
 .sub-nav {
   display: -ms-flexbox;
@@ -708,7 +708,8 @@ footer p {
   margin: 10px;
   right: 10px;
   top: 5px;
-  font-size: 20px;
+  font-size: 16px;
+  color: #C4A795;
 }
 .icon-scale-reduce-3 {
   display: none;
@@ -716,7 +717,8 @@ footer p {
   margin: 10px;
   right: 10px;
   top: 5px;
-  font-size: 20px;
+  font-size: 16px;
+  color: #C4A795;
 }
 .color {
   color: #EA6A09;

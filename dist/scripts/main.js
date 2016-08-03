@@ -23,8 +23,8 @@ function cycleImages(){
 
 navImageWrit.on('click',function(){
     $(this).toggleClass('move-up');
-    $('.icon-scale-spread-1').toggleClass('color-two');
-    $('.icon-scale-reduce-3').toggleClass('color');
+    $(this).find('.icon-scale-spread-1').toggleClass('color-two');
+    $(this).find('.icon-scale-reduce-3').toggleClass('color');
 });
 
 textButton.on('click', function(){
