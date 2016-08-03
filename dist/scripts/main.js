@@ -6,8 +6,12 @@ var header = $(".header");
 var textButton = $(".text-button");
 var secondText = $(".welcome-text-secondary");
 var navImageWrit = $('.nav-image-writing');
+var slideContain = $('.slider-container');
+var slide = $('.slide');
+var overlay = $('.gallery-overlay');
+var overlayContain = $('.slider-container-overlay');
 
-
+overlay.hide();
 
 $('.header-image').hide();
 
@@ -41,5 +45,38 @@ $(window).load(function(){
     setInterval(cycleImages,7000);
 })
 
+slideContain.on('mouseenter', function(){
+    slide.css('opacity','0.5');
+
+    slide.on('mouseenter', function(){
+        $(this).css('opacity','1');
+    });
+
+    slide.on('mouseleave', function(){
+        $(this).css('opacity','0.5');
+    });
+});
+
+
+
+slideContain.on('mouseleave', function(){
+    slide.css('opacity','1');
+
+});
+
+slide.on('click', function(){
+    
+    slide.css('opacity','1');
+    overlay.toggle();
+
+    var thisSlide = $(this).attr('src');
+
+    overlayContain.append("<img src='" + thisSlide + "' class='slide-grow'>");
+});
+
+overlay.on('click', function(){
+    overlayContain.empty();
+    $(this).hide();
+})
 
 });
