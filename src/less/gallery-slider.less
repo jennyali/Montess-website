@@ -14,12 +14,17 @@
     justify-content: space-around;
     background-color: @3rd-color;
     flex-wrap: wrap;
-    width: 80%;
+    width: 400px;
     padding: 20px 10px 10px 10px;
     flex-direction: row;
 
 
 
+        @media (min-width: 480px){width: 450px;}
+        
+        @media (min-width: 800px){width: 780px;}
+
+           @media (min-width: 1250px){width: 1180px;}
 }
 
 .slide{
@@ -30,11 +35,21 @@
     -moz-box-shadow: 1px 1px 21px -1px rgba(43,31,35,0.34);
     box-shadow: 1px 1px 21px -1px rgba(43,31,35,0.34);
     transition: opacity 0.5s;
+    transition: width 0.5s, height 0.5s;
+
+
+                 @media (min-width: 480px){width: 400px; height: 280px;}
+
+                    @media (min-width: 800px){width: 350px; height: 230px;}
+
 
 }
 
 .extra-text{
     color: @2nd-color;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+
+    @media (min-width: 630px){font-size: 16px;}
 
 }

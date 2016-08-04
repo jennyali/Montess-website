@@ -41,7 +41,7 @@ navIcon.on('click', function(){
 });
 
 $(window).load(function(){
-    $('.header-image').fadeIn(1000);
+    $('.header-image').fadeIn(200);
     setInterval(cycleImages,7000);
 })
 

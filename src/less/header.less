@@ -1,3 +1,4 @@
+
 .header-image{
     background-repeat: no-repeat;
     background-position: center;
@@ -7,10 +8,9 @@
     left: 0px;
     right: 0px;
     height: 400px;
-    z-index: -1;
+    z-index: -0;
     overflow: hidden;
-    opacity: 0.5;
-    background-color: @2nd-color;
+
 
         @media (min-width: 1150px){height: 500px;}
 }
@@ -21,14 +21,15 @@
     top: 0px;
     width: 1300px;
     height: 400px;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
+
 
 
         @media (min-width: 1150px){width: 1500px; height: 500px;}
 }
 
-.header-image img.active {z-index: 3}
+.header-image img.active {z-index: 3;}
 
 
 
@@ -42,6 +43,8 @@
     right: 0px;
     height: 400px;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    transition: height 0.5s;
 
         @media (min-width: 1150px){height: 500px;}
 
@@ -58,15 +61,18 @@
 
         .nav-gradient2nd{
         position: absolute;
-        height: 150px;
+        height: 100px;
         bottom: 0px;
         left: 0px;
         right: 0px;
-        background: linear-gradient( rgba(255,0,0,0), rgba(43,31,35,0.8));
+        background: linear-gradient( rgba(255,0,0,0), rgba(43,31,35,1));
         opacity: 0.8;
         z-index: 0;
-    } 
+
+         @media (min-width: 780px){height: 200px;}
 }
+    } 
+
 
 
 

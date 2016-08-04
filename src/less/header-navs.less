@@ -1,13 +1,33 @@
+.top-nav{
+    //background-image: url("../images/woodfloorBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 55px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    
+        @media (min-width: 900px){justify-content: center;}
+
+        @media (min-width: 1150px){justify-content: flex-end;}
+    
+
+}
+
 .nav{
     display: none;
-    position: absolute;
+    position: relative;
     color: @2nd-color;
     z-index: 1;
     font-family: 'Source Sans Pro', sans-serif;
 
-        @media (min-width: 900px){position: relative; display: flex; align-self: center;}
 
-        @media (min-width: 1150px){align-self: flex-end;}
+        @media (min-width: 900px){position: relative; display: flex;}
+
+        @media (min-width: 1150px){}
 
         ul{
             list-style: none;
@@ -34,8 +54,9 @@
     font-family: Arial, Helvetica, sans-serif;
     height: 50px;
     z-index: 1;
+    opacity: 1;
 
-        @media (min-width: 900px){height: 40px; display: none;}
+        @media (min-width: 900px){height: 40px; opacity: 0;}
 
         div{
             font-size: 14px;
@@ -53,9 +74,10 @@
             }
 
         .icon-navicon{
+            z-index: 1;
             font-size: 36px;
 
-                @media (min-width: 1150px){display: none;}
+                @media (min-width: 1150px){opacity: 0;}
 
                     &:active{color: @1st-color;}
         }
