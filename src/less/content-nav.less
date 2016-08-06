@@ -17,8 +17,14 @@
                 flex-grow: 0;
                 border-top: none;
                 position: relative;
+                overflow: hidden;
+                height: 250px;
 
-                    @media (min-width: 480px){margin: 0px 5px 0px 5px;}
+                        &:hover{
+                            outline: 1px solid @1st-color;
+                        }
+
+                    @media (min-width: 480px){margin: 5px 5px 5px 5px;}
                 
                     @media (min-width: 2000px){flex-grow: 1;}
 
@@ -29,7 +35,7 @@
                     height: 250px;
                     z-index: 0;
 
-                        @media (min-width: 723px){max-width: 350px; height: 200px;}
+                        @media (min-width: 723px){max-width: 400px; height: 250px;}
 
                         @media (min-width: 1300px){max-width: 400px; height: 250px;}
         }
@@ -47,7 +53,7 @@
         width: 100%;
         background-color: rgba(43,31,35,0.7);
         color: @2nd-color;
-        height: 100%;
+        height: 250px;
         overflow: hidden;
         transition: bottom 0.5s;
         font-size: 16px;
@@ -55,7 +61,7 @@
 
             &:hover{bottom: 0px;}
 
-                @media (min-width: 723px){bottom: -150px; &:hover{bottom: 0px;}}
+                @media (min-width: 723px){bottom: -200px; &:hover{bottom: 0px;}}
 
                 @media (min-width: 1300px){bottom: -200px; &:hover{bottom: 0px;}}
 
