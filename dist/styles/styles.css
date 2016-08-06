@@ -598,7 +598,7 @@ footer {
   padding: 0px 20px 20px 20px;
   height: 100%;
   position: relative;
-  bottom: 0x;
+  bottom: 0px;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -ms-flex-direction: column-reverse;
@@ -1155,6 +1155,38 @@ footer .footer-nav ul li {
   .name-gallery span {
     font-size: 40px;
   }
+}
+.whyMont-content {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: rgba(43, 31, 35, 0.5);
+  transition: background 0.5s;
+}
+@media (min-width: 480px) {
+  .whyMont-content {
+    background: rgba(43, 31, 35, 0.3);
+  }
+}
+@media (min-width: 900px) {
+  .whyMont-content {
+    background: rgba(43, 31, 35, 0);
+  }
+}
+.whyMont-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-shadow: inset 1px 29px 164px -44px #2b1f23;
+}
+.whyMont-header .nav {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=styles.css.map */
