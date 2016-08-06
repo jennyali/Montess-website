@@ -42,6 +42,8 @@
                         &:hover{color: @1st-color;}
 
                         &:active{text-decoration: underline;}
+             
+
         }
     }
 }
@@ -85,14 +87,15 @@
 
 
 .side-nav{
-        background-color: @2nd-color;
-        color: @5th-color;
+        background-color: @3rd-color;
+        color: @2nd-color;
         width: 250px;
         position: absolute;
         top: 50px;
         left: -250px;
-        z-index: 2;
+        z-index: 3;
         transition: left 0.25s;
+        height: 100%;
 
         @media (min-width: 1150px){display: none;}
     
@@ -105,9 +108,10 @@
                     li{
                         
                         padding: 10px 0px 10px 20px;
+                        background-color: rgba(117,82,71, 0.5);
                         //border-bottom: 1px solid @1st-color;
 
-                        &:hover{background-color: @3rd-color;
+                        &:hover{background-color: @4th-color;
                         color:@2nd-color;}
 
                         &:active{color: @1st-color}
@@ -119,5 +123,14 @@
     left: 0px;
 }
 
+ a{
+    color: @2nd-color;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
+    a:visited {color: @3rd-color;}
 
+    a:hover {color: @1st-color;}
+
+    a:active {text-decoration: underline;}
