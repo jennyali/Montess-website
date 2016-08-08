@@ -1,12 +1,48 @@
 .whyMont-oneContainer{
-    background-color: @3rd-color;
-    color: @5th-color;
     width: 75%;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+
+                
+                
+        div:nth-child(1){
+            display: flex;
+            background-color: @3rd-color;
+            color: @5th-color;
+
+            h3{color:@4th-color;}
+            p{color:@2nd-color;}
+
+        }
 
         div:nth-child(2){
+            display: flex;
+            flex-direction: row-reverse;
             background-color: @4th-color;
             color: @3rd-color;
+
+            h3{color:@2nd-color;}
+        }
+
+        div:nth-child(3){
+            display: flex;
+            background-color: @3rd-color;
+            color: @5th-color;
+
+            h3{color:@4th-color;}
+            p{color:@2nd-color;}
+
+        }
+
+
+        div:nth-child(4){
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: @4th-color;
+            color: @3rd-color;
+
+            h3{color:@2nd-color;}
         }
 
 }
@@ -15,11 +51,11 @@
     display: flex;
     flex-direction: row;
 
-
         .oneContainer-img{
             margin: 0px;
             width: 50%;
             height: 350px;
+
             
             img{            
                 width: 100%;
@@ -34,9 +70,9 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: center;
 
             h3{        
-                text-align: center;
        	        font-family: 'Lora', serif; 
                 margin: 0px;
             }
@@ -45,76 +81,11 @@
                 font-family: 'Source Sans Pro', sans-serif;
                 line-height: 26px;
                 word-spacing: 3px;
+
             }
 
         }
 
-
-}
-
-.whyMont-twoContainer{
-    display: flex;
-    flex-direction: column;
-    //width: 75%;
-    align-self: center;
-    position: relative;
-    overflow: hidden;
-
-
-}
-
-.twoContainer{
-    display: flex;
-    flex-direction: row;
-    padding: 100px 0px 60px 0px;
-    width: 75%;
-    align-self: center;
-
-
-    .twoContainer-img{
-        width: 40%;
-        z-index: 3;
-        position: relative;
-        margin: 0px;
-        
-    }
-
-    .twoContainer-text{
-        width: 60%;
-        padding: 30px 40px 30px 40px;
-        //border: 1px solid @2nd-color;
-        z-index: 2;
-
-        
-        h3{
-            text-align: center;
-       	    font-family: 'Lora', serif; 
-            margin: 0px;
-            color: @2nd-color;
-        }
-
-        p{
-            font-family: 'Source Sans Pro', sans-serif;
-            line-height: 26px;
-            word-spacing: 3px;
-            color: @3rd-color;
-        }
-    }
-
-}
-
-.math-img{
-        width: 450px;
-        position: absolute;
-        right: -30px;
-
-
 }
 
 
-.lang-img{
-        width: 450px;
-        position: absolute;
-        bottom: 0px;
-        left: -30px;
-}
