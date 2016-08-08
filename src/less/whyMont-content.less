@@ -12,6 +12,22 @@
 
 }
 
+.whyMont-aftertitle-text{
+        display: flex;
+        color: @2nd-color;
+        font-family: 'Source Sans Pro', sans-serif;
+        word-spacing: 1px;
+        margin: 0px;
+        text-align: center;
+        justify-content: center;
+
+        p{
+            width: 75%;
+            margin: 0px;
+            padding-top: 30px;
+        }
+}
+
 .whyMont-subHeadings{
     display: flex;
     flex-direction: column;
@@ -40,19 +56,32 @@
     }
 }
 
-.history-block{
+.history-block-bg{
     display: flex;
-    justify-content: center;
+    position: absolute;
+    height: 792px;
+    width: 100%;
+
     background-image: url('../images/maria-montessori_pic.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 500px;
+
+    z-index: 1; 
+}
+
+.history-block{
+    display: flex;
+    z-index: 2; 
+    background-color: rgba(43,31,35,0.8);
+    justify-content: center;
+
+    box-shadow: 0px 6px 88px -16px #2b1f23;
     
     .history-text{
         width: 75%;
-        padding: 0px 40px 40px 40px;
-        background-color: rgba(43,31,35,0.8);
+        padding: 20px 40px 40px 40px;
+        background-color: rgba(43,31,35,0.9);
         
 
 
@@ -65,13 +94,29 @@
         }
 
         p{
-            width: 60%;
+            width: 100%;
             color: @3rd-color;
             font-family: 'Source Sans Pro', sans-serif;
-            line-height: 26px;
-            word-spacing: 2px;
+            line-height: 30px;
+            word-spacing: 3px;
+            text-align: center;
+            padding-bottom: 40px;
+
+
         }
 
+    }
+
+    .history-images{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        opacity: 1;
+
+        img{
+            width: 50%;
+            height: 320px;
+        }
     }
 }
 
