@@ -16,11 +16,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #755247;
-  background-image: url("../images/woodfloorBG.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #755642;
+  background-image: url("../images/woodbg2.jpg");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  background-position: top;
   margin: 0px;
 }
 .header-image {
@@ -234,7 +234,7 @@ body {
   background-color: rgba(117, 82, 71, 0.5);
 }
 .side-nav ul li:hover {
-  background-color: #755247;
+  background-color: #755642;
   color: #FBEFE0;
 }
 .side-nav ul li:active {
@@ -493,8 +493,9 @@ a:active {
   -ms-flex-pack: center;
   justify-content: center;
   color: #C4A795;
-  background-color: #755247;
+  background-color: #755642;
   font-family: 'Source Sans Pro', sans-serif;
+  box-shadow: 0px 6px 88px -16px #2b1f23;
 }
 .welcome-block img {
   position: absolute;
@@ -594,7 +595,6 @@ footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #2B1F23;
-  color: #C4A795;
   padding: 0px 20px 20px 20px;
   height: 100%;
   position: relative;
@@ -617,6 +617,10 @@ footer p {
   width: 300px;
   font-size: 14px;
   text-align: center;
+  color: #C4A795;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 26px;
+  word-spacing: 3px;
 }
 @media (min-width: 600px) {
   footer p {
@@ -1083,7 +1087,7 @@ footer .footer-nav ul li {
 .title-gallery {
   display: -ms-flexbox;
   display: flex;
-  background-color: #755247;
+  background-color: #755642;
   -ms-flex-pack: center;
   justify-content: center;
   padding: 40px 0px 60px 0px;
@@ -1182,21 +1186,54 @@ footer .footer-nav ul li {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 60%;
-  -ms-flex-item-align: center;
-  align-self: center;
-  padding: 30px 0px 60px 0px;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .whyMont-subHeadings h3 {
-  text-align: center;
   color: #FBEFE0;
   font-family: 'Lora', serif;
+  width: 60%;
+  font-size: 26px;
 }
 .whyMont-subHeadings p {
   color: #C4A795;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 26px;
   word-spacing: 3px;
+  width: 75%;
+  margin: 0px;
+}
+.history-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url('../images/maria-montessori_pic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 500px;
+}
+.history-block .history-text {
+  width: 75%;
+  padding: 0px 40px 40px 40px;
+  background-color: rgba(43, 31, 35, 0.8);
+}
+.history-block .history-text h3 {
+  text-align: center;
+  color: #FBEFE0;
+  font-family: 'Lora', serif;
+  font-size: 36px;
+}
+.history-block .history-text p {
+  width: 60%;
+  color: #C4A795;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 26px;
+  word-spacing: 2px;
 }
 .whyMont-header {
   display: -ms-flexbox;
@@ -1210,15 +1247,59 @@ footer .footer-nav ul li {
   align-self: flex-end;
 }
 .whyMont-oneContainer {
-  background-color: #C4A795;
-  color: #2B1F23;
   width: 75%;
   -ms-flex-item-align: center;
   align-self: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.whyMont-oneContainer div:nth-child(1) {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #C4A795;
+  color: #2B1F23;
+}
+.whyMont-oneContainer div:nth-child(1) h3 {
+  color: #755642;
+}
+.whyMont-oneContainer div:nth-child(1) p {
+  color: #FBEFE0;
 }
 .whyMont-oneContainer div:nth-child(2) {
-  background-color: #755247;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  background-color: #755642;
   color: #C4A795;
+}
+.whyMont-oneContainer div:nth-child(2) h3 {
+  color: #FBEFE0;
+}
+.whyMont-oneContainer div:nth-child(3) {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #C4A795;
+  color: #2B1F23;
+}
+.whyMont-oneContainer div:nth-child(3) h3 {
+  color: #755642;
+}
+.whyMont-oneContainer div:nth-child(3) p {
+  color: #FBEFE0;
+}
+.whyMont-oneContainer div:nth-child(4) {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  background-color: #755642;
+  color: #C4A795;
+}
+.whyMont-oneContainer div:nth-child(4) h3 {
+  color: #FBEFE0;
 }
 .oneContainer {
   display: -ms-flexbox;
@@ -1244,9 +1325,9 @@ footer .footer-nav ul li {
   flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
+  text-align: center;
 }
 .oneContainer .oneContainer-text h3 {
-  text-align: center;
   font-family: 'Lora', serif;
   margin: 0px;
 }
@@ -1254,60 +1335,6 @@ footer .footer-nav ul li {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 26px;
   word-spacing: 3px;
-}
-.whyMont-twoContainer {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-item-align: center;
-  align-self: center;
-  position: relative;
-  overflow: hidden;
-}
-.twoContainer {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding: 100px 0px 60px 0px;
-  width: 75%;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-.twoContainer .twoContainer-img {
-  width: 40%;
-  z-index: 3;
-  position: relative;
-  margin: 0px;
-}
-.twoContainer .twoContainer-text {
-  width: 60%;
-  padding: 30px 40px 30px 40px;
-  z-index: 2;
-}
-.twoContainer .twoContainer-text h3 {
-  text-align: center;
-  font-family: 'Lora', serif;
-  margin: 0px;
-  color: #FBEFE0;
-}
-.twoContainer .twoContainer-text p {
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 26px;
-  word-spacing: 3px;
-  color: #C4A795;
-}
-.math-img {
-  width: 450px;
-  position: absolute;
-  right: -30px;
-}
-.lang-img {
-  width: 450px;
-  position: absolute;
-  bottom: 0px;
-  left: -30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
