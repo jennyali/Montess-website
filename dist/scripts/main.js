@@ -46,14 +46,14 @@ $(window).load(function(){
 })
 
 slideContain.on('mouseenter', function(){
-    slide.css('opacity','0.5');
+    slide.css('opacity','1');
 
     slide.on('mouseenter', function(){
-        $(this).css('opacity','1');
+        $(this).css('opacity','0.5');
     });
 
     slide.on('mouseleave', function(){
-        $(this).css('opacity','0.5');
+        $(this).css('opacity','1');
     });
 });
 
