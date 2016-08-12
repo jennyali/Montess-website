@@ -1,0 +1,183 @@
+
+
+.about-content{
+    position: relative;
+}
+
+
+.about-bg{
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(231,56,39,0) 0%, rgba(169,48,38,0) 33%, rgba(43,31,35,1) 100%);
+        
+}
+
+
+.staff-block{
+    height: 500px;
+    align-self: center;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: @4th-color;
+    -webkit-box-shadow: 0px 6px 88px -16px rgba(43,31,35,1);
+    -moz-box-shadow: 0px 6px 88px -16px rgba(43,31,35,1);
+    box-shadow: 0px 6px 88px -16px rgba(43,31,35,1);
+    z-index: 4;
+    flex-direction: column;
+
+                @media( min-width: 900px){
+                        flex-direction: row;
+                        margin-bottom: 70px;
+                        margin-bottom: 20px;
+                        height: 400px;
+
+                }
+
+                @media( min-width: 1100px){
+                        height: 600px;
+
+                }
+
+
+
+
+
+
+    img{
+        width: 300px;
+        border-radius: 100%;
+        z-index: 2;
+        position: relative;
+        right: 0px;
+        bottom: 15px;
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(43,31,35,0.76);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(43,31,35,0.76);
+        box-shadow: 0px 1px 5px 0px rgba(43,31,35,0.76);
+
+                    @media( min-width: 900px){
+                            position: absolute;
+                            right: 90px;
+                            width: 40%;
+                            top: 15%;
+                            bottom: 0px;
+                    }
+
+                    @media( min-width: 1200px){
+                            width: 40%;
+                            bottom: 0px;
+                            right: 120px;
+
+
+                    }
+    }
+}
+
+.staff-content{
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+
+                    @media( min-width: 720px ){
+                        width: 80%;
+                        padding: 30px;
+                        text-align: left;
+
+                    }
+
+                    @media( min-width: 1200px){
+                         width: 80%;
+                    }
+
+
+        h3{
+            font-family: 'Lora', serif; 
+            margin-top: 30px;
+            margin-bottom: 0px;
+            font-size: 22px;
+            color:@2nd-color;
+            text-align: center;
+
+                        @media( min-width: 900px ){
+                            font-size: 26px;
+                            text-align: left;
+                            margin: 20px;
+                            margin-left: 0px;
+                        }
+        }
+
+        p{
+            width: 100%;
+            font-family: 'Source Sans Pro', sans-serif;
+            word-spacing: 3px;
+            line-height: 22px;
+            font-size: 15px;
+            color:@3rd-color;
+ 
+                        @media( min-width: 900px ){
+                            width: 45%;
+                            line-height: 26px;
+                        }
+
+                        .text-delete{
+                            display: none;
+
+                            @media(min-width: 1100px){
+                                display: inline;
+                            }
+                        }
+        }
+
+    }
+
+.whyMont-subHeadings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+
+
+    h3{
+        color: @2nd-color;
+        font-family: 'Lora', serif;
+        width: 90%;
+        font-size: 22px;
+
+            @media( min-width:720px ){
+                width: 60%;
+                font-size: 26px;
+	        }
+
+    }
+
+    p{
+        color: @3rd-color;
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 22px;
+        word-spacing: 3px;
+        width: 90%;
+        margin: 0px;
+        font-size: 16px;
+
+
+            @media( min-width:720px ){
+                width: 75%;
+                line-height: 26px;
+
+	        }
+
+    }
+}
